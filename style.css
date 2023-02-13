@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.add-list {
+    position: fixed;
+    height: 100%;
+    width: 33%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(246,219,246,1) 0%, rgba(255,130,255,1) 100%);
+    border: pink 1px solid;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.add-list:hover {
+    background: linear-gradient(90deg, rgba(246,219,246,1) 0%, rgba(255,82,255,1) 100%);
+}
+
+.list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 67%;
+    background: rgb(246,219,246);
+    background: linear-gradient(90deg, rgba(246,219,246,1) 0%, rgba(252,253,172,1) 100%);
+    padding: 50px 0;
+}
+
+.list > li {
+    width: 40%;
+    background-color: rgba(204, 204, 204, 0.653);
+    list-style-type: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.085);
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list > li > span {
+    font-size: x-large;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 25px 0;
+}
+
+.list > li > span:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.list > li > ul {
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.list > li > ul > li {
+    font-size: x-large;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.remover {
+    background: rgba(255, 82, 255, 0.5);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -80px;
+    top:  25px;
+    border: 2px solid rgba(255, 82, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.remover:hover {
+    background: rgba(255, 82, 255, 0.7);
+
+}
+
+.remover > img {
+    height: 40px;
+    width: 40px;
+}
+
+.hide > li{
+    display: none;
+}
